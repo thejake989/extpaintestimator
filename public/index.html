@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exterior Paint Estimating Software</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="flex items-center justify-center bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r min-h-screen"
+  >
+    <div class="max-w-2xl mx-auto p-6 bg-white rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-5 text-gray-900">
+        Exterior Paint Estimating Software
+      </h2>
+
+      <label class="block mb-5">
+        <span class="text-gray-700">Square Feet</span>
+        <input
+          id="sqft"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          type="number"
+        />
+      </label>
+
+      <label class="block mb-5">
+        <span class="text-gray-700">Coats of Paint</span>
+        <input
+          id="coats"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          type="number"
+        />
+      </label>
+
+      <label class="block mb-5">
+        <span class="text-gray-700">Price per Gallon of Paint</span>
+        <input
+          id="ppg"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          type="number"
+        />
+      </label>
+
+      <label class="block mb-5">
+        <span class="text-gray-700">Labor Costs per Square Feet</span>
+        <input
+          id="labor"
+          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+          type="number"
+        />
+      </label>
+
+      <button
+        id="calculate"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Calculate
+      </button>
+
+      <div id="output" class="mt-5"></div>
+    </div>
+
+    <button
+      id="logoutButton"
+      class="fixed top-4 right-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Log Out
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
